@@ -1,0 +1,75 @@
+.topSmoke{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: smokeTopAnimation 1s ease-in;
+}
+
+.bottomSmoke{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    animation: smokeBottomAnimation 1s ease-in;
+}
+
+.groomName{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.topFlower{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    animation: flowerAnimation 1.3s ease-in;
+}
+
+.bottomFlower{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+    animation: flowerAnimation 1.3s ease-in;
+}
+
+.mainContent{
+    animation: mainContentAnimation 2s ease-in;
+}
+
+@keyframes mainContentAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flowerAnimation {
+    0% {
+        transform: translate(140px, 0);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+@keyframes smokeTopAnimation {
+    0% {
+        transform: translate(-90px, -60px) scale(0.5);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+@keyframes smokeBottomAnimation {
+    0% {
+        transform: translate(90px, 60px) scale(0.5);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
