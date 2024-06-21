@@ -1,8 +1,8 @@
 import Cover from "./components/cover";
 
-export default function Home() {
+export default function Wedding() {
   return (
-    <main data-testid="home" className="bg-white">
+    <main data-testid="wedding" className="bg-white">
       <Cover />
     </main>
   );

@@ -4,7 +4,7 @@ import { brittany } from "@/app/fonts/fonts";
 
 export default function Cover() {
     return (
-        <div className="flex justify-center items-center h-screen">
+        <div data-testid="cover" className="flex justify-center items-center h-screen">
             <Image
                 className={styles.topSmoke}
                 src="/images/topsmokexs.png"
