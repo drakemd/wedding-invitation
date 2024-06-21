@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "drakemd",
+        "projectKey": "drakemd_wedding-invitation"
+    }
+}
