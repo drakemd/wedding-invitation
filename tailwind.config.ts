@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
     colors: {
       primary: "#234390",
+      secondary: "#A9D7F9",
       white: colors.white,
     },
     extend: {
@@ -19,7 +20,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        brittany: ['var(--font-brittany)']
+        brittany: ['var(--font-brittany)'],
+        belleza: ['var(--font-belleza)']
       },
     },
   },
