@@ -39,13 +39,13 @@ export default function Cover() {
                 speed={0.5}
             />
             <div className={`flex flex-col pt-20 flex-1 z-10 justify-center items-center ${styles.mainContent}`}>
-                <p className={`${brittany.variable} font-brittany text-6xl text-primary`}>
+                <p className={`${brittany.variable} font-brittany text-6xl font-bold text-primary`}>
                     Indraga
                 </p>
                 <p className={`${brittany.variable} font-brittany text-5xl text-primary my-8`}>
                     &nbsp;&nbsp;&nbsp;&amp;
                 </p>
-                <p className={`${brittany.variable} font-brittany text-6xl text-primary`}>
+                <p className={`${brittany.variable} font-brittany text-6xl font-bold text-primary`}>
                     Tesa
                 </p>
             </div>
