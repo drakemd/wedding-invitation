@@ -1,10 +1,10 @@
+import Wedding from '@/app/wedding/page';
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
-import Home from '../../app/wedding/page';
 
-describe('Home component', () => {
+describe('Wedding page', () => {
   test('renders without crashing', () => {
-    render(<Home />);
-    expect(screen.getByTestId('home')).toBeInTheDocument();
+    render(<Wedding />);
+    expect(screen.getByTestId('wedding')).toBeInTheDocument();
   });
 });
