@@ -10,3 +10,13 @@ export const brittany = localFont({
     ],
     variable: '--font-brittany'
 })
+
+export const belleza = localFont({
+    src: [
+      {
+        path: '../../public/fonts/Belleza.ttf',
+        weight: '400'
+      },
+    ],
+    variable: '--font-belleza'
+})

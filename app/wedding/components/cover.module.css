@@ -1,3 +1,9 @@
+.cover{
+    width: 100%;
+    overflow: hidden !important;
+    position: relative;
+}
+
 .topSmoke{
     position: absolute;
     top: 0px;
@@ -36,6 +42,81 @@
 
 .mainContent{
     animation: mainContentAnimation 2s ease-in;
+}
+
+.butterfly1{
+    position: absolute;
+    top: -170px;
+    right: 0px;
+    width: 100px;
+    animation: butterflyAnimation 20s ease-in;
+    z-index: 9;
+}
+
+.butterfly2{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 350px;
+    z-index: 11;
+    animation: butterflyAnimation2 20s infinite ease-in;
+}
+
+.footer{
+    animation: buttonAnimationFade 3s ease-in;
+}
+
+.button{
+    animation-name: buttonAnimationThrob;
+    animation-duration: 2000ms;
+    animation-delay: 3000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes buttonAnimationFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes buttonAnimationThrob {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes butterflyAnimation {
+    0% {
+        transform: translate(0px, 800px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes butterflyAnimation2 {
+    0% {
+        transform: rotateY(180deg) translate(300px, 300px);
+    }
+    50% {
+        transform: rotateY(180deg) translate(0px, -100px);
+    }
+    55% {
+        transform: rotateY(0deg) translate(0px, -100px);
+    }
+    100% {
+        transform: translate(-300px, -300px);
+    }
 }
 
 @keyframes mainContentAnimation {

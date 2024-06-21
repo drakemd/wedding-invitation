@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import '@dotlottie/react-player/dist/index.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
