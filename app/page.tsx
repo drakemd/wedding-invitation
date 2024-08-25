@@ -1,4 +1,4 @@
-import Cover from "./wedding/components/cover";
+import Cover from "./cover/page";
 
 export default function Home() {
   return (

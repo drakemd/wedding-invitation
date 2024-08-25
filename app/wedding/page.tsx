@@ -1,4 +1,6 @@
-import Cover from "./components/cover";
+"use client";
+
+import Cover from "./components/cover2";
 
 export default function Wedding() {
   return (

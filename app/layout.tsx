@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import '@dotlottie/react-player/dist/index.css';
+import { MusicProvider } from "./__providers/bgmprovider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-white">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <MusicProvider>
+          {children}
+        </MusicProvider>
+      </body>
     </html>
   );
 }
