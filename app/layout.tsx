@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import '@dotlottie/react-player/dist/index.css';
 import { MusicProvider } from "./__providers/bgmprovider";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,9 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-white">
       <body className={inter.className}>
-        <MusicProvider>
-          {children}
-        </MusicProvider>
+        <Suspense fallback={<div>loading...</div>}>
+          <MusicProvider>
+            {children}
+          </MusicProvider>
+        </Suspense>
       </body>
     </html>
   );
