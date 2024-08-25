@@ -1,0 +1,13 @@
+.quotes{
+    animation: quotesAnimation 1s ease-in-out;
+}
+
+@keyframes quotesAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 30px);
+    }
+    100% {
+        opacity: 1;
+    }
+}

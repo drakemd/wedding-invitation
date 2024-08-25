@@ -1,0 +1,40 @@
+.bridePicContainer {
+    height: 240px;
+    width: 190px;
+    overflow: hidden;
+    border: 3px solid #234390;
+    border-radius: 250px 250px 0px 0px;
+    padding: 10px;
+    animation: bridePicContainerAnimation 1s ease-in-out;
+}
+
+.bridePic {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 250px 250px 0px 0px;
+}
+
+.brideDetailContainer{
+    animation: brideDetailContainerAnimation 1s ease-in-out;
+}
+
+@keyframes bridePicContainerAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 30px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes brideDetailContainerAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 30px);
+    }
+    100% {
+        opacity: 1;
+    }
+}
