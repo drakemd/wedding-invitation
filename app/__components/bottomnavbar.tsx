@@ -3,6 +3,11 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useRef } from 'react';
 import { FaHome } from 'react-icons/fa';
 import styles from './bottomnavbar.module.css';
+import { BsChatLeftQuoteFill } from 'react-icons/bs';
+import { IoIosHeartHalf } from 'react-icons/io';
+import { IoMapSharp } from 'react-icons/io5';
+import { AiFillPicture } from "react-icons/ai";
+
 
 const BottomNavBar = () => {
   const pathname = usePathname();
@@ -16,32 +21,32 @@ const BottomNavBar = () => {
     { 
         name: 'Quotes', 
         path: '/quotes',
-        iconActive: <FaHome fill='#234390' size={24} />,
-        iconInactive: <FaHome fill='#ffffff' size={24} />,
+        iconActive: <BsChatLeftQuoteFill fill='#234390' size={24} />,
+        iconInactive: <BsChatLeftQuoteFill fill='#ffffff' size={24} />,
      },
     { 
         name: 'Groom', 
         path: '/groom',
-        iconActive: <FaHome fill='#234390' size={24} />,
-        iconInactive: <FaHome fill='#ffffff' size={24} />,
+        iconActive: <IoIosHeartHalf fill='#234390' size={24} />,
+        iconInactive: <IoIosHeartHalf fill='#ffffff' size={24} />,
      },
     { 
         name: 'Bride', 
         path: '/bride',
-        iconActive: <FaHome fill='#234390' size={24} />,
-        iconInactive: <FaHome fill='#ffffff' size={24} />,
+        iconActive: <IoIosHeartHalf fill='#234390' size={24} />,
+        iconInactive: <IoIosHeartHalf fill='#ffffff' size={24} />,
      },
     { 
         name: 'Gallery', 
         path: '/gallery',
-        iconActive: <FaHome fill='#234390' size={24} />,
-        iconInactive: <FaHome fill='#ffffff' size={24} />,
+        iconActive: <AiFillPicture fill='#234390' size={24} />,
+        iconInactive: <AiFillPicture fill='#ffffff' size={24} />,
      },
     { 
         name: 'Maps', 
         path: '/maps',
-        iconActive: <FaHome fill='#234390' size={24} />,
-        iconInactive: <FaHome fill='#ffffff' size={24} />,
+        iconActive: <IoMapSharp fill='#234390' size={24} />,
+        iconInactive: <IoMapSharp fill='#ffffff' size={24} />,
      },
   ];
 
