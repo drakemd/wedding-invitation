@@ -20,3 +20,13 @@ export const belleza = localFont({
     ],
     variable: '--font-belleza'
 })
+
+export const brigesta = localFont({
+  src: [
+    {
+      path: '../../public/fonts/Brigesta.ttf',
+      weight: '400'
+    },
+  ],
+  variable: '--font-brigesta'
+})

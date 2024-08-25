@@ -1,0 +1,145 @@
+.cover{
+    width: 100%;
+    overflow: hidden !important;
+    position: relative;
+    background-image: url('/images/bg.webp');
+    background-size: cover;
+}
+
+.pillarLeft{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: pillarLeftAnimation 1.5s ease-in;
+}
+
+.pillarRight{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    animation: pillarRightAnimation 1.5s ease-in;
+}
+
+.topFrame{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    animation: frameDownAnimation 1.5s ease-in;
+}
+
+.bottomFrame{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    animation: frameUpAnimation 1.5s ease-in;
+}
+
+.flowerTopRight{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    animation: flowerTopRightAnimation 2s ease-in;
+}
+
+.flowerTopLeft{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    animation: flowerTopLeftAnimation 2s ease-in;
+}
+
+.flowerBottomLeft{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 50%;
+    animation: flowerBottomLeftAnimation 2s ease-in;
+}
+
+.flowerBottomRight{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50%;
+    animation: flowerBottomRightAnimation 2s ease-in;
+}
+
+.background{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+@keyframes pillarLeftAnimation {
+    0% {
+        transform: translate(-50px, 0);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes pillarRightAnimation {
+    0% {
+        transform: translate(50px, 0);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes frameDownAnimation {
+    0% {
+        transform: translate(0px, -50px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes frameUpAnimation {
+    0% {
+        transform: translate(0px, 50px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes flowerTopLeftAnimation {
+    0% {
+        transform: translate(-100px, -100px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes flowerTopRightAnimation {
+    0% {
+        transform: translate(100px, -100px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes flowerBottomLeftAnimation {
+    0% {
+        transform: translate(-100px, 100px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes flowerBottomRightAnimation {
+    0% {
+        transform: translate(100px, 100px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}

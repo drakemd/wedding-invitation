@@ -21,7 +21,8 @@ const config: Config = {
       },
       fontFamily: {
         brittany: ['var(--font-brittany)'],
-        belleza: ['var(--font-belleza)']
+        belleza: ['var(--font-belleza)'],
+        brigesta: ['var(--font-brigesta)']
       },
     },
   },

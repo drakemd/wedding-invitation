@@ -1,0 +1,26 @@
+.bottomNav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    background: #A9D7F9;
+    padding: 10px;
+    scrollbar-width: none; /* Firefox */
+    z-index: 99;
+  }
+  .bottomNav::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  .bottomNav div {
+    flex-shrink: 0;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+  }
+  .bottomNav div.active {
+    font-weight: bold;
+    color: #0070f3;
+  }
