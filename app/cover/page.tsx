@@ -4,12 +4,13 @@ import styles from './page.module.css';
 import { belleza, brigesta } from "@/app/fonts/fonts";
 import { DotLottiePlayer } from "@dotlottie/react-player";
 import Frame from "@/app/__components/frame";
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { useMusic } from '../__providers/bgmprovider';
 
 export default function Cover() {
     const router = useRouter();
-    const urlParams = new URLSearchParams(window.location.search);
+    const searchParams = useSearchParams();
+    const urlParams = new URLSearchParams(searchParams.toString());
     const guestname = urlParams.get('guestname');
     const music = useMusic();
 
